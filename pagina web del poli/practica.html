@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Ejemplo</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li:hover > ul {
+            display: block;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background: #333;
+            padding: 10px 0;
+            top: 100%;
+            left: 0;
+        }
+        nav ul ul li a {
+            color: white;
+        }
+        nav ul ul li a:hover {
+            background: #575757;
+        }
+        /* Responsive Menu */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul ul {
+                position: static;
+            }
+        }
+        /* Section Styles */
+        section {
+            padding: 20px;
+        }
+        .section-title {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escuela Ejemplo</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#mision-vision">Misión y Visión</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#dirigentes">Dirigentes</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#actividades">Actividades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="historia">
+        <h2 class="section-title">Historia</h2>
+        <p>La Escuela Ejemplo fue fundada en el año XXXX con el propósito de brindar educación de calidad a nuestra comunidad...</p>
+    </section>
+
+    <section id="mision-vision">
+        <h2 class="section-title">Misión y Visión</h2>
+        <p><strong>Misión:</strong> Formar estudiantes integrales comprometidos con su entorno.</p>
+        <p><strong>Visión:</strong> Ser una institución líder en educación innovadora para el año XXXX.</p>
+    </section>
+
+    <section id="valores">
+        <h2 class="section-title">Valores</h2>
+        <ul>
+            <li>Respeto</li>
+            <li>Integridad</li>
+            <li>Compromiso</li>
+            <li>Excelencia</li>
+        </ul>
+    </section>
+
+    <section id="dirigentes">
+        <h2 class="section-title">Dirigentes</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Director</h3>
+                <p>Nombre del director</p>
+            </div>
+            <div class="card">
+                <h3>Subdirector</h3>
+                <p>Nombre del subdirector</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos">
+        <h2 class="section-title">Cursos por Niveles</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Primaria</h3>
+                <p>Cursos básicos y fundamentales...</p>
+            </div>
+            <div class="card">
+                <h3>Secundaria</h3>
+                <p>Preparación académica avanzada...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="actividades">
+        <h2 class="section-title">Actividades Realizadas</h2>
+        <ul>
+            <li>Campañas de reciclaje</li>
+            <li>Ferias científicas</li>
+            <li>Proyectos comunitarios</li>
+        </ul>
+    </section>
+</body>
+</html>

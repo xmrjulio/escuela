@@ -1,0 +1,33 @@
+body{
+
+background-color: rgb(9, 9, 9);
+text-align: center;
+
+}
+h1{
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: black;
+color: chartreuse;
+
+}
+.ubi{
+
+    text-transform: lowercase;
+    text-align: center;
+    
+}
+.ubicacion{
+
+    color: blue;
+    width: 600px;
+    height: 450px;
+    border: 5px solid rgb(30, 127, 187);
+    display: inline-block;
+}
+img{
+
+    height: 90px;
+    width: 90px;
+    display: block;
+border-radius: 30px;
+}

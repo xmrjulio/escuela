@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión de 5to a informatica
+
+    </title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+                <small id="emailError" class="error"></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <small id="passwordError" class="error"></small>
+            </div>
+
+            <a href="http://127.0.0.1:5500/curso.html"><button type="submit">Iniciar Sesión</button></a>
+        </form>
+
+        <div id="loginMessage"></div>
+    </div>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
